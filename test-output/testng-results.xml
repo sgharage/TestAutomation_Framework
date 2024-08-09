@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-09T12:15:18 IST" name="Default suite" finished-at="2024-08-09T12:15:24 IST" duration-ms="5836">
+    <groups>
+    </groups>
+    <test started-at="2024-08-09T12:15:18 IST" name="Default test" finished-at="2024-08-09T12:15:24 IST" duration-ms="5836">
+      <class name="TestCases.GooglePageTestFW">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.GooglePageTestFW@78e4deb0]" started-at="2024-08-09T12:15:18 IST" name="setup" finished-at="2024-08-09T12:15:21 IST" duration-ms="2837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SearchGoogle()[pri:0, instance:TestCases.GooglePageTestFW@78e4deb0]" started-at="2024-08-09T12:15:21 IST" name="SearchGoogle" finished-at="2024-08-09T12:15:21 IST" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchGoogle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.GooglePageTestFW@78e4deb0]" started-at="2024-08-09T12:15:21 IST" name="tearDown" finished-at="2024-08-09T12:15:21 IST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.GooglePageTestFW@78e4deb0]" started-at="2024-08-09T12:15:21 IST" name="setup" finished-at="2024-08-09T12:15:23 IST" duration-ms="2275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="clickFacebook()[pri:0, instance:TestCases.GooglePageTestFW@78e4deb0]" started-at="2024-08-09T12:15:23 IST" name="clickFacebook" finished-at="2024-08-09T12:15:23 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickFacebook -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.GooglePageTestFW@78e4deb0]" started-at="2024-08-09T12:15:23 IST" name="tearDown" finished-at="2024-08-09T12:15:24 IST" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.GooglePageTestFW -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
