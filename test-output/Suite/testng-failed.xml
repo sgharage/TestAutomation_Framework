@@ -6,7 +6,7 @@
       <class name="TestCases.Facebookloginpage">
         <methods>
           <include name="tearDown"/>
-          <include name="enterUserDetail" invocation-numbers="0 1 2 3 4"/>
+          <include name="enterUserDetail" invocation-numbers="0 1 2 3 4 5"/>
           <include name="setup"/>
         </methods>
       </class> <!-- TestCases.Facebookloginpage -->

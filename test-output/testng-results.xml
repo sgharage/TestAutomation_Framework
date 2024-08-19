@@ -1,37 +1,603 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="2" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-09T12:15:18 IST" name="Default suite" finished-at="2024-08-09T12:15:24 IST" duration-ms="5836">
+  <suite started-at="2024-08-19T12:36:28 IST" name="Suite" finished-at="2024-08-19T12:36:56 IST" duration-ms="27579">
     <groups>
     </groups>
-    <test started-at="2024-08-09T12:15:18 IST" name="Default test" finished-at="2024-08-09T12:15:24 IST" duration-ms="5836">
-      <class name="TestCases.GooglePageTestFW">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.GooglePageTestFW@78e4deb0]" started-at="2024-08-09T12:15:18 IST" name="setup" finished-at="2024-08-09T12:15:21 IST" duration-ms="2837" status="PASS">
+    <test started-at="2024-08-19T12:36:28 IST" name="TestPhase1" finished-at="2024-08-19T12:36:56 IST" duration-ms="27579">
+      <class name="TestCases.Facebookloginpage">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:38 IST" name="setup" finished-at="2024-08-19T12:36:41 IST" duration-ms="2723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="SearchGoogle()[pri:0, instance:TestCases.GooglePageTestFW@78e4deb0]" started-at="2024-08-09T12:15:21 IST" name="SearchGoogle" finished-at="2024-08-09T12:15:21 IST" duration-ms="397" status="PASS">
+        <test-method signature="enterUserDetail(java.lang.String,java.lang.String)[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:41 IST" name="enterUserDetail" data-provider="TestData" finished-at="2024-08-19T12:36:41 IST" duration-ms="195" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abc@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Abc123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ddbbfb392a2a3ecbc65b64a759738da, findElement {value=email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60489}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60489/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ddbbfb392a2a3ecbc65b64a759738da]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0ddbbfb392a2a3ecbc65b64a759738da, findElement {value=email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60489}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60489/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ddbbfb392a2a3ecbc65b64a759738da
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at TestCases.Facebookloginpage.enterUserDetail(Facebookloginpage.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SearchGoogle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.GooglePageTestFW@78e4deb0]" started-at="2024-08-09T12:15:21 IST" name="tearDown" finished-at="2024-08-09T12:15:21 IST" duration-ms="122" status="PASS">
+        </test-method> <!-- enterUserDetail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:41 IST" name="tearDown" finished-at="2024-08-19T12:36:42 IST" duration-ms="414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.GooglePageTestFW@78e4deb0]" started-at="2024-08-09T12:15:21 IST" name="setup" finished-at="2024-08-09T12:15:23 IST" duration-ms="2275" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:42 IST" name="setup" finished-at="2024-08-19T12:36:45 IST" duration-ms="3225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="clickFacebook()[pri:0, instance:TestCases.GooglePageTestFW@78e4deb0]" started-at="2024-08-09T12:15:23 IST" name="clickFacebook" finished-at="2024-08-09T12:15:23 IST" duration-ms="26" status="PASS">
+        <test-method signature="enterUserDetail(java.lang.String,java.lang.String)[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:45 IST" name="enterUserDetail" data-provider="TestData" finished-at="2024-08-19T12:36:45 IST" duration-ms="20" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xYz@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12367]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [346b576a6bda995b8be9b3f14c210f57, findElement {value=email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60525/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 346b576a6bda995b8be9b3f14c210f57]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [346b576a6bda995b8be9b3f14c210f57, findElement {value=email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60525/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 346b576a6bda995b8be9b3f14c210f57
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at TestCases.Facebookloginpage.enterUserDetail(Facebookloginpage.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterUserDetail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:45 IST" name="tearDown" finished-at="2024-08-19T12:36:45 IST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:45 IST" name="setup" finished-at="2024-08-19T12:36:48 IST" duration-ms="2429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enterUserDetail(java.lang.String,java.lang.String)[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:48 IST" name="enterUserDetail" data-provider="TestData" finished-at="2024-08-19T12:36:48 IST" duration-ms="19" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1xYz@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12367A]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cdd5fc2b1ae582cbe9222d4923bc432e, findElement {value=email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60551}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60551/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cdd5fc2b1ae582cbe9222d4923bc432e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cdd5fc2b1ae582cbe9222d4923bc432e, findElement {value=email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60551}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60551/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cdd5fc2b1ae582cbe9222d4923bc432e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at TestCases.Facebookloginpage.enterUserDetail(Facebookloginpage.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterUserDetail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:48 IST" name="tearDown" finished-at="2024-08-19T12:36:48 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:48 IST" name="setup" finished-at="2024-08-19T12:36:50 IST" duration-ms="2371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enterUserDetail(java.lang.String,java.lang.String)[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:50 IST" name="enterUserDetail" data-provider="TestData" finished-at="2024-08-19T12:36:50 IST" duration-ms="20" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2xYz@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12367B]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [199c87651ceb93e81289e1fa7fd594bc, findElement {value=email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60576}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60576/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 199c87651ceb93e81289e1fa7fd594bc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [199c87651ceb93e81289e1fa7fd594bc, findElement {value=email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60576}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60576/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 199c87651ceb93e81289e1fa7fd594bc
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at TestCases.Facebookloginpage.enterUserDetail(Facebookloginpage.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterUserDetail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:50 IST" name="tearDown" finished-at="2024-08-19T12:36:50 IST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:50 IST" name="setup" finished-at="2024-08-19T12:36:53 IST" duration-ms="2510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enterUserDetail(java.lang.String,java.lang.String)[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:53 IST" name="enterUserDetail" data-provider="TestData" finished-at="2024-08-19T12:36:53 IST" duration-ms="22" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abcd#1234@xyz.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[908*89]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ead8c840d62b47eb163162e148f958b, findElement {value=email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60603}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60603/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ead8c840d62b47eb163162e148f958b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ead8c840d62b47eb163162e148f958b, findElement {value=email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60603}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60603/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ead8c840d62b47eb163162e148f958b
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at TestCases.Facebookloginpage.enterUserDetail(Facebookloginpage.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterUserDetail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:53 IST" name="tearDown" finished-at="2024-08-19T12:36:53 IST" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:53 IST" name="setup" finished-at="2024-08-19T12:36:56 IST" duration-ms="2852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enterUserDetail(java.lang.String,java.lang.String)[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:56 IST" name="enterUserDetail" data-provider="TestData" finished-at="2024-08-19T12:36:56 IST" duration-ms="26" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sarikagharage8@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sarika@1205]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [026a3ae125043374027d54ff377fc3a6, findElement {value=email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60628}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60628/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 026a3ae125043374027d54ff377fc3a6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [026a3ae125043374027d54ff377fc3a6, findElement {value=email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.100, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60628}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60628/devtoo..., se:cdpVersion: 127.0.6533.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 026a3ae125043374027d54ff377fc3a6
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at TestCases.Facebookloginpage.enterUserDetail(Facebookloginpage.java:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterUserDetail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.Facebookloginpage@cecf639]" started-at="2024-08-19T12:36:56 IST" name="tearDown" finished-at="2024-08-19T12:36:56 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.Facebookloginpage -->
+      <class name="TestCases.GooglePageTestFW">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.GooglePageTestFW@1ca3b418]" started-at="2024-08-19T12:36:28 IST" name="setup" finished-at="2024-08-19T12:36:35 IST" duration-ms="6135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SearchGoogle()[pri:0, instance:TestCases.GooglePageTestFW@1ca3b418]" started-at="2024-08-19T12:36:35 IST" name="SearchGoogle" finished-at="2024-08-19T12:36:35 IST" duration-ms="519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchGoogle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.GooglePageTestFW@1ca3b418]" started-at="2024-08-19T12:36:35 IST" name="tearDown" finished-at="2024-08-19T12:36:35 IST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.GooglePageTestFW@1ca3b418]" started-at="2024-08-19T12:36:35 IST" name="setup" finished-at="2024-08-19T12:36:38 IST" duration-ms="2941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="clickFacebook()[pri:0, instance:TestCases.GooglePageTestFW@1ca3b418]" started-at="2024-08-19T12:36:38 IST" name="clickFacebook" finished-at="2024-08-19T12:36:38 IST" duration-ms="24" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickFacebook -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.GooglePageTestFW@78e4deb0]" started-at="2024-08-09T12:15:23 IST" name="tearDown" finished-at="2024-08-09T12:15:24 IST" duration-ms="144" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.GooglePageTestFW@1ca3b418]" started-at="2024-08-19T12:36:38 IST" name="tearDown" finished-at="2024-08-19T12:36:38 IST" duration-ms="144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases.GooglePageTestFW -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- TestPhase1 -->
+  </suite> <!-- Suite -->
 </testng-results>

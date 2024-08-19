@@ -27,6 +27,7 @@ public class Facebookloginpage extends BaseTest{
 			{"xYz@abc.com", "12367"},
 			{"1xYz@abc.com", "12367A"},
 			{"2xYz@abc.com", "12367B"},
+			{"Abcd#1234@xyz.com","908*89"},
 			{"sarikagharage8@gmail.com", "Sarika@1205"},
 			
 		};
